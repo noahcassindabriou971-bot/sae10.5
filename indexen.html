@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing in Guadeloupe - Complete Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M17 6.1H3M21 12.1H3M17 18.1H3"></path>
+                        <circle cx="20" cy="6.1" r="1"></circle>
+                        <circle cx="20" cy="18.1" r="1"></circle>
+                    </svg>
+                    <div>
+                        <h1 id="site-title">Fishing in Guadeloupe</h1>
+                        <p id="site-subtitle">Complete guide for fishing enthusiasts</p>
+                    </div>
+                </div>
+                <div class="header-controls">
+                    <a href="index.html" class="icon-btn" aria-label="Passer en français" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: var(--accent-color); color: white; border-radius: 0.5rem; font-weight: 500; transition: all 0.2s;">
+                        FR
+                    </a>
+                    <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="icon" id="theme-icon" viewBox="0 0 24 24">
+                            <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><button class="nav-btn active" data-page="home">Home</button></li>
+                    <li><button class="nav-btn" data-page="techniques">Techniques</button></li>
+                    <li><button class="nav-btn" data-page="poissons">Fish Species</button></li>
+                    <li><button class="nav-btn" data-page="spots">Best Spots</button></li>
+                    <li><button class="nav-btn" data-page="materiel">Equipment</button></li>
+                    <li><button class="nav-btn" data-page="reglements">Regulations</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <div id="page-home" class="page active">
+            <section class="hero">
+                <div class="container">
+                    <h2 id="hero-title">Master Fishing in Guadeloupe</h2>
+                    <p id="hero-subtitle">Techniques, spots and tips for successful sessions</p>
+                    <p id="hero-description">Discover the best fishing techniques adapted to the Caribbean waters of Guadeloupe. Whether you're a beginner or experienced angler, learn to target local species and master the methods that work.</p>
+                    <button class="cta-btn" onclick="navigateToPage('techniques')" id="hero-cta">Discover Techniques</button>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container">
+                    <div class="cards-grid">
+                        <div class="card">
+                            <svg class="icon icon-lg" viewBox="0 0 24 24">
+                                <path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.46-3.44 6-7 6s-7.56-2.54-8.5-6Z"></path>
+                                <path d="M18 12v.5M16 17.93a9.77 9.77 0 0 1 0-11.86M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33m7-3.33h.01"></path>
+                            </svg>
+                            <h3 id="card1-title">Varied Species</h3>
+                            <p id="card1-desc">Mahi-mahi, tuna, marlin, barracuda and much more</p>
+                        </div>
+                        <div class="card">
+                            <svg class="icon icon-lg" viewBox="0 0 24 24">
+                                <circle cx="12" cy="5" r="3"></circle>
+                                <line x1="12" y1="22" x2="12" y2="8"></line>
+                                <path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>
+                            </svg>
+                            <h3 id="card2-title">Exclusive Spots</h3>
+                            <p id="card2-desc">The best locations tested and approved by locals</p>
+                        </div>
+                        <div class="card">
+                            <svg class="icon icon-lg" viewBox="0 0 24 24">
+                                <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                            </svg>
+                            <h3 id="card3-title">All Techniques</h3>
+                            <p id="card3-desc">Big game fishing, trolling, jigging, casting, bottom fishing</p>
+                        </div>
+                    </div>
+
+                    <div style="max-width: 800px; margin: 2rem auto; text-align: center;">
+                        <h2 id="mission-title">Your Complete Guide</h2>
+                        <p id="mission-text">This guide was created by and for Guadeloupe fishing enthusiasts. You will find all essential information: techniques adapted to the Caribbean, recommended equipment, best spots according to seasons, fish identification, local regulations and pro tips. Our mission: to enable you to experience unforgettable sessions while respecting the resource.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Techniques Page -->
+        <div id="page-techniques" class="page">
+            <section class="content-section">
+                <div class="container">
+                    <h2 id="techniques-title">Fishing techniques in Guadeloupe</h2>
+                    
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/traineee.jpg" alt="Pêche à la traîne" class="card-image">
+                        <div class="card-content">
+                        <h3 id="tech1-title">Trolling</h3>
+                        <p id="tech1-desc">Ideal technique for catching pelagic fish such as mahi-mahi and tuna. Use artificial lures or natural baits trolled behind the boat at moderate speed.</p>
+                        <ul>
+                            <li id="tech1-tip1">Optimal speed: 5-8 knots</li>
+                            <li id="tech1-tip2">Depth: Surface to 50m</li>
+                            <li id="tech1-tip3">Best time: Early morning or late afternoon</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/jig.jpg" alt="Pêche au jig" class="card-image">
+                        <div class="card-content">
+                        <h3 id="tech2-title">Jigging</h3>
+                        <p id="tech2-desc">Effective vertical technique for rocky bottoms. Let the jig sink to the bottom then retrieve it with jerks to imitate an injured fish.</p>
+                        <ul>
+                            <li id="tech2-tip1">Depth: 30-200m</li>
+                            <li id="tech2-tip2">Jig weight: 80-200g depending on depth</li>
+                            <li id="tech2-tip3">Target species: Groupers, snappers, jacks</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                         <img src="images/casting.jpg" alt="Lancer-Ramener" class="card-image">
+                        <div class="card-content">
+                        <h3 id="tech3-title">Throw-Bring Back</h3>
+                        <p id="tech3-desc">Perfect for coastal areas and shallow reefs. Cast your lure and retrieve it with a variety of actions.</p>
+                        <ul>
+                            <li id="tech3-tip1">Lures  : Poppers, stickbaits, jerkbaits</li>
+                            <li id="tech3-tip2">Areas: Reefs, seagrass beds, mangroves</li>
+                            <li id="tech3-tip3">Species: Barracudas, jacks, tarpons</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/palan.png" alt="Bottom Fishing" class="card-image">
+                        <div class="card-content">
+                        <h3 id="tech4-title">Bottom Fishing</h3>
+                        <p id="tech4-desc">A traditional and highly effective technique for reef fish. Use several hooks mounted on a main line with natural bait.</p>
+                        <ul>
+                            <li id="tech4-tip1">Bait: Sardines, squid, crabs</li>
+                            <li id="tech4-tip2">Assembly: 2-5 hooks spaced 50 cm apart</li>
+                            <li id="tech4-tip3">Depth: 15-80m</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/gros.jpeg" alt="Pêche au Gros" class="card-image">
+                        <div class="card-content">
+                        <h3 id="tech5-title">Deep-sea fishing</h3>
+                        <p id="tech5-desc">For marlins, giant tuna, and sharks. Requires sturdy equipment and good preparation.</p>
+                        <ul>
+                            <li id="tech5-tip1">Equipment: 50-130 lb rods, lever reels</li>
+                            <li id="tech5-tip2">Bait: Ballyhoo, bonito, surface lures</li>
+                            <li id="tech5-tip3">Best season: April to July for marlin</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Fish Species Page -->
+        <div id="page-poissons" class="page">
+            <section class="content-section">
+                <div class="container">
+                    <h2 id="poissons-title">Fish Species of the Caribbean</h2>
+                    
+                        <div class="card">
+                            <img src="images/mahi.jpg" alt="Mahi-Mahi (Dorado)" class="card-image">
+                            <div class="card-content">
+                            <h3 id="fish1-name">Mahi-Mahi (Dorado)</h3>
+                            <p id="fish1-desc"><strong>Size :</strong> 50-150cm<br>
+                            <strong>Habitat :</strong> Pelagic waters, floating wrecks<br>
+                            <strong>Technique :</strong> Trolling, casting and retrieving<br>
+                            <strong>Season :</strong> All year round, peak March-June</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/thon.jpg" alt="Yellowfin Tuna" class="card-image">
+                            <div class="card-content">
+                            <h3 id="fish2-name">Yellowfin Tuna</h3>
+                            <p id="fish2-desc"><strong>Size :</strong> 80-200cm<br>
+                            <strong>Habitat :</strong> Open sea, schools of fish<br>
+                            <strong>Technique :</strong> Fast trolling, jigging<br>
+                            <strong>Season :</strong> February-August</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/Barracuda.jpg" alt="Barracuda" class="card-image">
+                            <div class="card-content">
+                            <h3 id="fish3-name">Barracuda</h3>
+                            <p id="fish3-desc"><strong>Size :</strong> 60-150cm<br>
+                            <strong>Habitat :</strong> Reefs, coastal areas<br>
+                            <strong>Technique :</strong> Casting and retrieving, coastal trolling<br>
+                            <strong>Season :</strong> All year round</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/vivaneau.jpg" alt="Vivaneau" class="card-image">
+                            <div class="card-content">
+                            <h3 id="fish4-name">Vivaneau</h3>
+                            <p id="fish4-desc"><strong>Size :</strong> 30-80cm<br>
+                            <strong>Habitat :</strong> Rocky bottom 30-150m<br>
+                            <strong>Technique :</strong> Bottom Fishing, jigging<br>
+                            <strong>Season :</strong> All year round</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/thazard.jpg" alt="Thazard" class="card-image">
+                            <div class="card-content">
+                            <h3 id="fish5-name">Thazard</h3>
+                            <p id="fish5-desc"><strong>Size :</strong> 100-250cm<br>
+                            <strong>Habitat :</strong> Open sea, occasionally coastal areas<br>
+                            <strong>Technique :</strong> Jigging, heavy trolling<br>
+                            <strong>Season :</strong> All year round</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/carangue.jpg" alt="Jack (Crevalle)" class="card-image">
+                            <div class="card-content">
+                            <h3 id="fish6-name">Jack (Crevalle)</h3>
+                            <p id="fish6-desc"><strong>Size :</strong> 40-120cm<br>
+                            <strong>Habitat :</strong>Reefs, channels, shipwrecks<br>
+                            <strong>Technique :</strong> Jigging, casting, bottom fishing<br>
+                            <strong>Season :</strong> All year round</p>
+                            </div>
+                        </div>
+                        </div>
+            </section>
+        </div>
+
+        <!-- Spots Page -->
+        <div id="page-spots" class="page">
+            <section class="content-section">
+                <div class="container">
+                    <h2 id="spots-title">Best Fishing Spots</h2>
+                    
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/spot1.jpeg" alt="Pigeon Islets (Cousteau Reserve)" class="card-image">
+                        <div class="card-content">
+                        <h3 id="spot1-name">Pigeon Islets (Cousteau Reserve)</h3>
+                        <p id="spot1-desc"><strong>Type :</strong> Protected coral reef<br>
+                        <strong>Depth :</strong> 5-40m<br>
+                        <strong>Species :</strong> Snappers, jacks, barracudas<br>
+                        <strong>Access :</strong> Boat only from Bouillante<br>
+                        <strong>Note :</strong> Regulated fishing, compliance with mandatory marine reserve</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/spot2.jpg" alt="The Dry Pâté" class="card-image">
+                        <div class="card-content">
+                        <h3 id="spot2-name">The Dry Pâté</h3>
+                        <p id="spot2-desc"><strong>Type :</strong> Undersea mountain<br>
+                        <strong>Depth :</strong> 40-200m<br>
+                        <strong>Species :</strong> Tuna, sea bream, marlin<br>
+                        <strong>Distance :</strong> 15 miles off the coast of Deshaies<br>
+                        <strong>Techniques :</strong> Trolling, deep jigging</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/spot3.webp" alt="Castle Point" class="card-image">
+                        <div class="card-content">
+                        <h3 id="spot3-name">Castle Point</h3>
+                        <p id="spot3-desc"><strong>Type :</strong> Coastal and shore fishing<br>
+                        <strong>Depth :</strong> 0-30m<br>
+                        <strong>Species :</strong> Barracudas, jacks, tarpons<br>
+                        <strong>Access :</strong> From the shore or by kayak<br>
+                        <strong>Best time :</strong> Sunrise and sunset</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/spot4.jpg" alt="Les Saintes" class="card-image">
+                        <div class="card-content">
+                        <h3 id="spot4-name">Les Saintes</h3>
+                        <p id="spot4-desc"><strong>Type :</strong> Archipelago with varied seabeds<br>
+                        <strong>Depth :</strong> 10-150m<br>
+                        <strong>Species :</strong> All reef and pelagic species<br>
+                        <strong>Special feature :</strong> Excellent jigging spots<br>
+                        <strong>Access :</strong> Boat from Trois-Rivières</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/spot5.webp" alt="Grand Cul-de-Sac Marin" class="card-image">
+                        <div class="card-content">
+                        <h3 id="spot5-name">Grand Cul-de-Sac Marin</h3>
+                        <p id="spot5-desc"><strong>Type :</strong> Lagoon and mangroves<br>
+                        <strong>Depth :</strong> 1-15m<br>
+                        <strong>Species :</strong> Tarpons, barracudas, jacks<br>
+                        <strong>Techniques :</strong> Casting and retrieving, sight fishing<br>
+                        <strong>Special feature :</strong> Ideal spot for beginners</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Materiel Page -->
+        <div id="page-materiel" class="page">
+            <section class="content-section">
+                <div class="container">
+                    <h2 id="materiel-title">Recommended Fishing Equipment</h2>
+                    
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/cannes.jpg" alt="Fishing Rods" class="card-image">
+                        <div class="card-content">
+                        <h3 id="mat1-title">Fishing Rods</h3>
+                        <ul>
+                            <li id="mat1-item1"><strong>Light casting/spinning (7-15 kg) :</strong> For coastal casting and retrieving, perfect for barracuda and jacks</li>
+                            <li id="mat1-item2"><strong>Jigging rod (100-300g) :</strong> For deep vertical fishing</li>
+                            <li id="mat1-item3"><strong>Trolling rod (20-50 lbs) :</strong> For medium-sized sea bream and tuna</li>
+                            <li id="mat1-item4"><strong>Heavy tackle fishing rod (50-130 lbs) :</strong> For marlins and large tuna</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/moulinets.jpg" alt="Reels" class="card-image">
+                        <div class="card-content">
+                        <h3 id="mat2-title">Reels</h3>
+                        <ul>
+                            <li id="mat2-item1"><strong>Spinning 4000-6000 :</strong> Versatile for casting and retrieving</li>
+                            <li id="mat2-item2"><strong>Jigging reel :</strong> High capacity, fast recovery</li>
+                            <li id="mat2-item3"><strong>30-50 drag reel :</strong> Robust with good brakes</li>
+                            <li id="mat2-item4"><strong>Lever reel :</strong>  For big game fishing, capacity 400m+ of braided line</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/leurres.jpg" alt="Lures and Bait" class="card-image">
+                        <div class="card-content">
+                        <h3 id="mat3-title">Lures and Baits</h3>
+                        <ul>
+                            <li id="mat3-item1"><strong>Poppers and stickbaits :</strong> 10-20cm for surface fishing</li>
+                            <li id="mat3-item2"><strong>Jigs :</strong> 80-200g in various colors</li>
+                            <li id="mat3-item3"><strong>Trolling lures :</strong> Rapala, jig heads</li>
+                            <li id="mat3-item4"><strong>Natural bait :</strong> Sardines, squid, ballyhoo (orphies)</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/lignes.webp" alt="Lines and Leaders" class="card-image">
+                        <div class="card-content">
+                        <h3 id="mat4-title">Leaders and Leaders</h3>
+                        <ul>
+                            <li id="mat4-item1"><strong>Braided :</strong> PE 2-8 depending on technique (20-80 lbs)</li>
+                            <li id="mat4-item2"><strong>Fluorocarbon :</strong> 30-150 lbs for leader line</li>
+                            <li id="mat4-item3"><strong>Steel wire :</strong> Essential for barracudas and wahoo</li>
+                            <li id="mat4-item4"><strong>Nylon :</strong> 40-100 lbs for longline rigs</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/accessoires.jpeg" alt="Essential Accessories" class="card-image">
+                        <div class="card-content">
+                        <h3 id="mat5-title">Essential Accessories</h3>
+                        <ul>
+                            <li id="mat5-item1">Landing net or boat hook depending on the size of the catch</li>
+                            <li id="mat5-item2">Fish tongs and thread cutter</li>
+                            <li id="mat5-item3">Cooler for storing catches</li>
+                            <li id="mat5-item4">GPS and fish finder to locate spots</li>
+                            <li id="mat5-item5">Life jacket and safety equipment</li>
+                            <li id="mat5-item6">Sun protection: hat, sunscreen, polarized sunglasses</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Reglements Page -->
+        <div id="page-reglements" class="page">
+            <section class="content-section">
+                <div class="container">
+                    <h2 id="reglements-title">Fishing Regulations in Guadeloupe</h2>
+                    
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/permis.jpg" alt="Permits and Licenses" class="card-image">
+                        <div class="card-content">
+                        <h3 id="reg1-title">Permits and Licenses</h3>
+                        <p id="reg1-desc">No license is required for recreational sea fishing in Guadeloupe. However, you must comply with the quotas and regulations in force..</p>
+                        <ul>
+                            <li id="reg1-item1">Recreational fishing: Free, no license required</li>
+                            <li id="reg1-item2">Commercial fishing: Professional license required</li>
+                            <li id="reg1-item3">Respect for protected areas and marine reserves</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/tailles.jpg" alt="Minimum Catch Sizes" class="card-image">
+                        <div class="card-content">
+                        <h3 id="reg2-title">Minimum Catch Sizes</h3>
+                        <p id="reg2-desc">It is imperative to respect minimum sizes in order to preserve stocks :</p>
+                        <ul>
+                            <li id="reg2-item1">Mahi-mahi: 60 cm</li>
+                            <li id="reg2-item2">Yellowfin tuna : 90 cm</li>
+                            <li id="reg2-item3">Snapper : 30 cm</li>
+                            <li id="reg2-item4">Grouper : 40 cm</li>
+                            <li id="reg2-item5">Marlin: 200 cm (catch and release recommended)</li>
+                            <li id="reg2-item6">Lobsters: 21 cm (from eye to tail)</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/quotas.png" alt="Recreational Fishing Quotas" class="card-image">
+                        <div class="card-content">
+                        <h3 id="reg3-title">Recreational Fishing Quotas</h3>
+                        <ul>
+                            <li id="reg3-item1">Maximum 5 kg per fisherman per day for reef fish</li>
+                            <li id="reg3-item2">Maximum 10 kg for pelagic fish</li>
+                            <li id="reg3-item3">No more than 2 fish of the same species</li>
+                            <li id="reg3-item4">Lobsters: 6 per fisherman</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/proteger.jpg" alt="Protected Species" class="card-image">
+                        <div class="card-content">
+                        <h3 id="reg4-title">Protected Species</h3>
+                        <p id="reg4-desc">These species must never be fished :</p>
+                        <ul>
+                            <li id="reg4-item1">All sea turtles</li>
+                            <li id="reg4-item2">All marine mammals (dolphins, whales)</li>
+                            <li id="reg4-item3">Manta rays</li>
+                            <li id="reg4-item4">Sharks of certain species</li>
+                            <li id="reg4-item5">Lambi (conch) - moratorium in effect</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <img src="images/zones.jpg" alt="Protected Areas" class="card-image">
+                        <div class="card-content">
+                        <h3 id="reg5-title">Protected Areas</h3>
+                        <ul>
+                            <li id="reg5-item1"><strong>Cousteau Reserve :</strong> No fishing around the Pigeon Islets</li>
+                            <li id="reg5-item2"><strong>Grand Cul-de-Sac Marin :</strong> Specific regulations, prohibited areas</li>
+                            <li id="reg5-item3"><strong>Petite Terre :</strong> Nature reserve, fishing strictly prohibited</li>
+                            <li id="reg5-item4">Respect breeding and nursery areas</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/pratiques.jpg" alt="Best Practices" class="card-image">
+                        <div class="card-content">
+                        <h3 id="reg6-title">Best Practices</h3>
+                        <ul>
+                            <li id="reg6-item1">Practice catch and release for large breeding specimens.</li>
+                            <li id="reg6-item2">Use barbless hooks to make it easier to release fish back into the water.</li>
+                            <li id="reg6-item3">Don't waste: only catch what you will consume.</li>
+                            <li id="reg6-item4">Bring back all your trash and fishing line</li>
+                            <li id="reg6-item5">Respect other users of the sea</li>
+                            <li id="reg6-item6">Report any pollution or poaching to the authorities</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 id="footer-about-title">About</h3>
+                    <p id="footer-about-desc" style="color: var(--header-text-muted); margin-bottom: 1rem;">Your complete guide to discover the best fishing techniques in Guadeloupe and the Caribbean.</p>
+                    <p id="footer-tagline" style="color: var(--header-text-muted); font-size: 0.875rem; font-style: italic;">Fish responsibly, preserve our oceans</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 id="footer-nav-title">Quick links</h3>
+                    <button onclick="navigateToPage('techniques')" id="footer-nav1">Fishing techniques</button>
+                    <button onclick="navigateToPage('poissons')" id="footer-nav2">Fish species</button>
+                    <button onclick="navigateToPage('spots')" id="footer-nav3">Best spots</button>
+                    <button onclick="navigateToPage('materiel')" id="footer-nav4">Equipment</button>
+                    <button onclick="navigateToPage('reglements')" id="footer-nav5">Regulations</button>
+                </div>
+
+                <div class="footer-section">
+                    <h3 id="footer-contact-title">Contact</h3>
+                    <p style="color: var(--header-text-muted); font-size: 0.875rem;">
+                        <svg class="icon" viewBox="0 0 24 24" style="display: inline; vertical-align: middle; margin-right: 0.5rem;">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2b4844455f4a485f6b5b4e48434e064c5e4a4f4e47445e5b4e054d59">[email&#160;protected]</a>
+                    </p>
+                    <p style="color: var(--header-text-muted); font-size: 0.875rem; margin-top: 0.5rem;">
+                        <svg class="icon" viewBox="0 0 24 24" style="display: inline; vertical-align: middle; margin-right: 0.5rem;">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        +590 690 XX XX XX
+                    </p>
+                    <p style="color: var(--header-text-muted); font-size: 0.875rem; margin-top: 0.5rem;">
+                        <svg class="icon" viewBox="0 0 24 24" style="display: inline; vertical-align: middle; margin-right: 0.5rem;">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span id="footer-location">Guadeloupe, Caribbean</span>
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 id="footer-social-title">Follow us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" aria-label="Facebook">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Twitter">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p id="footer-made" style="color: var(--header-text-muted); font-size: 0.875rem; margin-top: 1rem;">Made with ❤️ for passionate anglers</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p id="footer-copyright">2026 Fishing in Guadeloupe. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize state
+            let isDarkMode = localStorage.getItem('darkMode') === 'true';
+            let currentPage = 'home';
+
+            // Apply dark mode on load
+            if (isDarkMode) {
+                document.body.classList.add('dark');
+                updateThemeIcon();
+            }
+
+            // Page navigation function
+            function navigateToPage(pageId) {
+                console.log('Navigating to:', pageId);
+                
+                // Hide all pages
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+                
+                // Show selected page
+                const targetPage = document.getElementById('page-' + pageId);
+                if (targetPage) {
+                    targetPage.classList.add('active');
+                }
+                
+                // Update nav buttons
+                document.querySelectorAll('.nav-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-page') === pageId) {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                currentPage = pageId;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Make navigateToPage global so onclick attributes can use it
+            window.navigateToPage = navigateToPage;
+
+            // Nav buttons click handlers
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                console.log('Adding listener to:', btn.getAttribute('data-page'));
+                btn.addEventListener('click', function() {
+                    navigateToPage(btn.getAttribute('data-page'));
+                });
+            });
+
+            // Theme toggle
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    isDarkMode = !isDarkMode;
+                    document.body.classList.toggle('dark');
+                    localStorage.setItem('darkMode', isDarkMode);
+                    updateThemeIcon();
+                });
+            }
+
+            function updateThemeIcon() {
+                const icon = document.getElementById('theme-icon');
+                if (icon) {
+                    if (isDarkMode) {
+                        icon.innerHTML = '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>';
+                    } else {
+                        icon.innerHTML = '<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>';
+                    }
+                }
+            }
+
+            console.log('JavaScript initialized successfully');
+        });
+    </script>
+</body>
+</html>
